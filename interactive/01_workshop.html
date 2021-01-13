@@ -1,0 +1,207 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS İLe programlamaya giriş! :: Eloquent JavaScript</title>
+  <link rel=stylesheet href="js/node_modules/codemirror/lib/codemirror.css">
+  <script src="js/acorn_codemirror.js"></script>
+  <link rel=stylesheet href="css/ejs.css">
+  <script src="js/sandbox.js"></script>
+  <script src="js/ejs.js"></script></head>
+
+<article>
+<nav><a href="index.html" title="cover">◆</a></nav>
+
+<h1>JS İLe programlamaya giriş!</h1>
+
+<blockquote>
+
+<p><a class="p_ident" id="p_qoMGIzSWuV" href="#p_qoMGIzSWuV" tabindex="-1" role="presentation"></a>Allahtan faydalı ilim isteyin ve fayda vermeyen ilimden Allaha sığının.</p>
+
+<footer>Hz. Muhammed (S.a.v)</footer>
+
+</blockquote>
+
+<h2><a class="h_ident" id="h_qPGafdISOH" href="#h_qPGafdISOH" tabindex="-1" role="presentation"></a>Ekrana yazdırmak</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_Z7LJbUqj/K" href="#c_Z7LJbUqj/K" tabindex="-1" role="presentation"></a><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-number">34</span>);</pre>
+
+<h2><a class="h_ident" id="h_0bgPwu2e2J" href="#h_0bgPwu2e2J" tabindex="-1" role="presentation"></a>Değİşkenler</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_Rh2EOg0MlK" href="#c_Rh2EOg0MlK" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">x</span> <span class="cm-operator">=</span> <span class="cm-number">2</span>, <span class="cm-def">y</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span><span class="cm-operator">+</span><span class="cm-variable">y</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">z</span><span class="cm-operator">=</span> <span class="cm-number">5</span>;
+<span class="cm-keyword">let</span> <span class="cm-def">h</span><span class="cm-operator">=</span> <span class="cm-number">20</span>;
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">h</span><span class="cm-operator">/</span><span class="cm-variable">z</span>)</pre>
+
+<h2><a class="h_ident" id="h_XAMmJWk2gj" href="#h_XAMmJWk2gj" tabindex="-1" role="presentation"></a>Akış kontrolları</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_NEudtREHQ3" href="#c_NEudtREHQ3" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">x</span><span class="cm-operator">=</span> <span class="cm-number">2</span>, <span class="cm-def">y</span><span class="cm-operator">=</span> <span class="cm-number">4</span>;
+<span class="cm-keyword">if</span>(<span class="cm-variable">x</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">y</span> ){
+
+}
+
+<span class="cm-keyword">if</span> (<span class="cm-variable">x</span> <span class="cm-operator">&gt;</span> <span class="cm-variable">y</span> ){
+
+}</pre>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_ign0gxlGl1" href="#c_ign0gxlGl1" tabindex="-1" role="presentation"></a><span class="cm-keyword">if</span>(){}
+<span class="cm-keyword">else</span>{}</pre>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_pbJd5cQ2Hy" href="#c_pbJd5cQ2Hy" tabindex="-1" role="presentation"></a><span class="cm-keyword">if</span>(){}
+<span class="cm-keyword">else</span> <span class="cm-keyword">if</span>(){}
+<span class="cm-keyword">else</span>()</pre>
+
+<h2><a class="h_ident" id="h_vlRq7wj+wi" href="#h_vlRq7wj+wi" tabindex="-1" role="presentation"></a>Fonksİyonlar</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_ZY7OAvHNLt" href="#c_ZY7OAvHNLt" tabindex="-1" role="presentation"></a><span class="cm-keyword">function</span> <span class="cm-def">sum</span>(<span class="cm-def">x</span>,<span class="cm-def">y</span>,<span class="cm-def">z</span>){
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">x</span><span class="cm-operator">+</span><span class="cm-variable-2">y</span><span class="cm-operator">+</span><span class="cm-variable-2">z</span> 
+}
+
+<span class="cm-keyword">function</span> <span class="cm-def">average</span>(<span class="cm-def">x</span>,<span class="cm-def">y</span>,<span class="cm-def">z</span>){
+    <span class="cm-keyword">return</span> (<span class="cm-variable-2">x</span><span class="cm-operator">+</span><span class="cm-variable-2">y</span><span class="cm-operator">+</span><span class="cm-variable-2">z</span>)<span class="cm-operator">/</span><span class="cm-number">3</span>
+}
+
+
+<span class="cm-keyword">function</span> <span class="cm-def">smaller</span>(<span class="cm-def">x</span>,<span class="cm-def">y</span>){
+    <span class="cm-keyword">if</span>(<span class="cm-variable-2">x</span><span class="cm-operator">&lt;</span><span class="cm-variable-2">y</span>){
+        <span class="cm-keyword">return</span> <span class="cm-variable-2">x</span>;
+    }<span class="cm-keyword">else</span> {
+        <span class="cm-keyword">return</span> <span class="cm-variable-2">y</span>
+    }
+}</pre>
+
+<h2><a class="h_ident" id="h_rvE57cqgdw" href="#h_rvE57cqgdw" tabindex="-1" role="presentation"></a>Matematİk Önreğİ</h2>
+
+<p><a class="p_ident" id="p_lfMsbHM5Q7" href="#p_lfMsbHM5Q7" tabindex="-1" role="presentation"></a><a href="../extras/index.html">Genel Kural</a></p>
+
+<p><a class="p_ident" id="p_kuagi/M+07" href="#p_kuagi/M+07" tabindex="-1" role="presentation"></a>İkinci dereceden denklem</p>
+
+<p><a class="p_ident" id="p_RfrjdrWBNN" href="#p_RfrjdrWBNN" tabindex="-1" role="presentation"></a>x^2 + 4x + 4 = 0</p>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_oAyrzbXEA4" href="#c_oAyrzbXEA4" tabindex="-1" role="presentation"></a><span class="cm-keyword">function</span> <span class="cm-def">delta</span>(<span class="cm-def">a</span>,<span class="cm-def">b</span>,<span class="cm-def">c</span>){
+    <span class="cm-keyword">return</span> <span class="cm-variable">Math</span>.<span class="cm-property">sqrt</span>((<span class="cm-variable-2">b</span><span class="cm-operator">*</span><span class="cm-variable-2">b</span>)<span class="cm-operator">-</span>(<span class="cm-number">4</span><span class="cm-operator">*</span><span class="cm-variable-2">a</span><span class="cm-operator">*</span><span class="cm-variable-2">c</span>))
+}</pre>
+
+<p>x^2 + 4x + 4 = 0</p>
+
+<p><a class="p_ident" id="p_P5Zgda222R" href="#p_P5Zgda222R" tabindex="-1" role="presentation"></a>Sonuç eksi ise nasıl olur?</p>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_fQ8oz3051l" href="#c_fQ8oz3051l" tabindex="-1" role="presentation"></a><span class="cm-keyword">function</span> <span class="cm-def">quadraticZero</span>(<span class="cm-def">a</span>,<span class="cm-def">b</span>,<span class="cm-def">c</span>){
+    <span class="cm-keyword">return</span> <span class="cm-operator">-</span><span class="cm-variable-2">b</span><span class="cm-operator">/</span><span class="cm-number">2</span><span class="cm-operator">*</span><span class="cm-variable-2">a</span>
+}
+
+<span class="cm-keyword">function</span> <span class="cm-def">quadraticMinus</span>(<span class="cm-def">a</span>,<span class="cm-def">b</span>,<span class="cm-def">c</span>){
+    <span class="cm-keyword">return</span> <span class="cm-operator">-</span><span class="cm-variable-2">b</span><span class="cm-operator">/</span><span class="cm-number">2</span><span class="cm-operator">*</span><span class="cm-variable-2">a</span>
+}
+
+<span class="cm-keyword">function</span> <span class="cm-def">quadraticPlus</span>(<span class="cm-def">a</span>,<span class="cm-def">b</span>,<span class="cm-def">c</span>){
+    <span class="cm-keyword">return</span> <span class="cm-operator">-</span><span class="cm-variable-2">b</span><span class="cm-operator">/</span><span class="cm-number">2</span><span class="cm-operator">*</span><span class="cm-variable-2">a</span>
+}</pre>
+
+<h2><a class="h_ident" id="h_1IZR6AwDI+" href="#h_1IZR6AwDI+" tabindex="-1" role="presentation"></a>Data Tİplerİ</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_6AHWYtcnAe" href="#c_6AHWYtcnAe" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">x</span><span class="cm-operator">=</span> <span class="cm-string">&quot;Hello&quot;</span>;
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">result</span>)
+<span class="cm-keyword">let</span> <span class="cm-def">y</span><span class="cm-operator">=</span> <span class="cm-string">&quot;world&quot;</span>
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span><span class="cm-operator">+</span><span class="cm-variable">y</span>)
+<span class="cm-keyword">let</span> <span class="cm-def">z</span><span class="cm-operator">=</span> <span class="cm-number">1</span>;
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span><span class="cm-operator">+</span><span class="cm-variable">y</span><span class="cm-operator">+</span><span class="cm-variable">z</span>)</pre>
+
+<h2><a class="h_ident" id="h_kaiUzx5mvA" href="#h_kaiUzx5mvA" tabindex="-1" role="presentation"></a>Döngüler</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_Rx+txG0Mzk" href="#c_Rx+txG0Mzk" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">result</span> <span class="cm-operator">=</span><span class="cm-number">0</span>;
+<span class="cm-keyword">for</span>(<span class="cm-keyword">let</span> <span class="cm-def">i</span><span class="cm-operator">=</span><span class="cm-number">5</span>; <span class="cm-variable">i</span><span class="cm-operator">&lt;</span> <span class="cm-number">20</span>; <span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>){
+    <span class="cm-variable">result</span> <span class="cm-operator">=</span> <span class="cm-variable">i</span> <span class="cm-operator">+</span> <span class="cm-variable">result</span>;
+}
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">result</span>)
+
+<span class="cm-keyword">let</span> <span class="cm-def">x</span><span class="cm-operator">=</span><span class="cm-number">5</span>
+<span class="cm-keyword">let</span> <span class="cm-def">result1</span><span class="cm-operator">=</span><span class="cm-number">0</span>;
+<span class="cm-keyword">while</span>(<span class="cm-variable">x</span> <span class="cm-operator">&lt;</span> <span class="cm-number">20</span> ){
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span>)
+    <span class="cm-variable">x</span><span class="cm-operator">=</span><span class="cm-variable">x</span><span class="cm-operator">+</span><span class="cm-number">5</span>;
+}
+
+<span class="cm-keyword">for</span>(<span class="cm-keyword">let</span> <span class="cm-def">i</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">i</span><span class="cm-operator">&lt;</span> <span class="cm-number">10</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>){
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">i</span>)
+}</pre>
+
+<h2><a class="h_ident" id="h_KM8Bd/v6C3" href="#h_KM8Bd/v6C3" tabindex="-1" role="presentation"></a>Dİzİler</h2>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_UAoCiao+Wl" href="#c_UAoCiao+Wl" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">x</span> <span class="cm-operator">=</span>[<span class="cm-string">&quot;a&quot;</span>,<span class="cm-string">&quot;b&quot;</span>,<span class="cm-string">&quot;c&quot;</span>,<span class="cm-string">&quot;d&quot;</span>,<span class="cm-string">&quot;e&quot;</span>,<span class="cm-string">&quot;f&quot;</span>]
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span>[<span class="cm-number">1</span>])</pre>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_Gri7nSnh+H" href="#c_Gri7nSnh+H" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">x</span> <span class="cm-operator">=</span>[<span class="cm-string">&quot;a&quot;</span>,<span class="cm-string">&quot;b&quot;</span>,<span class="cm-string">&quot;c&quot;</span>,<span class="cm-string">&quot;d&quot;</span>,<span class="cm-string">&quot;e&quot;</span>,<span class="cm-string">&quot;f&quot;</span>]
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">x</span>.<span class="cm-property">length</span>)</pre>
+
+<h3><a class="i_ident" id="i_IfMwYFMI95" href="#i_IfMwYFMI95" tabindex="-1" role="presentation"></a>Algorİtma örneğİ</h3>
+
+<p><a class="p_ident" id="p_iUyLEWW0UM" href="#p_iUyLEWW0UM" tabindex="-1" role="presentation"></a>Çikolata algoritması</p>
+
+<pre class="snippet cm-s-default" data-language="java" ><a class="c_ident" id="c_LZ4zt4QlwI" href="#c_LZ4zt4QlwI" tabindex="-1" role="presentation"></a>Markete git 
+çikolata ara.
+çikolata satın al.</pre>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_41xnNuzpFB" href="#c_41xnNuzpFB" tabindex="-1" role="presentation"></a><span class="cm-keyword">let</span> <span class="cm-def">req</span><span class="cm-operator">=</span><span class="cm-string">&quot;Çikolata&quot;</span>
+<span class="cm-keyword">let</span> <span class="cm-def">avai</span><span class="cm-operator">=</span>[
+<span class="cm-string">&quot;Şehriye&quot;</span>,
+<span class="cm-string">&quot;Et&quot;</span>,
+<span class="cm-string">&quot;Tavuk&quot;</span>,
+<span class="cm-string">&quot;pilav&quot;</span>,
+<span class="cm-string">&quot;Çikolata&quot;</span>,
+<span class="cm-string">&quot;Hıyar&quot;</span>,
+<span class="cm-string">&quot;Patates&quot;</span>,
+<span class="cm-string">&quot;Döner&quot;</span>
+]
+
+<span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">avai</span>.<span class="cm-property">length</span> ; <span class="cm-variable">i</span><span class="cm-operator">=</span> <span class="cm-variable">i</span><span class="cm-operator">+</span><span class="cm-number">1</span>){
+<span class="cm-keyword">if</span>(<span class="cm-variable">avai</span>[<span class="cm-variable">i</span>]<span class="cm-operator">==</span><span class="cm-variable">req</span>){
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">&quot;vardır&quot;</span>)
+}
+}</pre>
+
+<h2><a class="h_ident" id="h_237O6k0rmd" href="#h_237O6k0rmd" tabindex="-1" role="presentation"></a>Hazır kütüphaneler</h2>
+
+<p><a class="p_ident" id="p_Pt8N9JlC2m" href="#p_Pt8N9JlC2m" tabindex="-1" role="presentation"></a>Math</p>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_PZlItWIrql" href="#c_PZlItWIrql" tabindex="-1" role="presentation"></a><span class="cm-variable">console</span>.<span class="cm-property">log</span>(
+<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+<span class="cm-variable">Math</span>.<span class="cm-property">PI</span>
+)</pre>
+
+<h2><a class="h_ident" id="h_swHnuZHaue" href="#h_swHnuZHaue" tabindex="-1" role="presentation"></a>Alıştırma</h2>
+
+<h3><a class="i_ident" id="i_O51LrWs8O0" href="#i_O51LrWs8O0" tabindex="-1" role="presentation"></a>Üçcgen Çİzİmİ</h3>
+
+<p><a class="p_ident" id="p_BCB+xpuIAc" href="#p_BCB+xpuIAc" tabindex="-1" role="presentation"></a>Aşağıdaki üçgen çizen yedi kere <code>console.log</code> çağıran bir program yazınız.</p>
+
+<pre class="snippet cm-s-default" data-language="null" ><a class="c_ident" id="c_iAdOqXrnTq" href="#c_iAdOqXrnTq" tabindex="-1" role="presentation"></a>#
+##
+###
+####
+#####
+######
+#######</pre>
+
+<pre class="snippet cm-s-default" data-language="javascript" ><a class="c_ident" id="c_FpsUMxQ1BA" href="#c_FpsUMxQ1BA" tabindex="-1" role="presentation"></a><span class="cm-comment">// Programın burada yazılır.</span></pre>
+
+<div class="solution"><div class="solution-text">
+
+<p><a class="p_ident" id="p_ayR8ms6dgm" href="#p_ayR8ms6dgm" tabindex="-1" role="presentation"></a>ilk etapta <a href="#D%C3%B6ng%C3%BCler">Döngüler kısmı</a> referans alırak birden yediye kadar yazdıran bir program yazabilirsiniz. O programı yazdıktan sonra ufak tefek değişikler yapılır.</p>
+
+<p><a class="p_ident" id="p_jdCs6Aq4CI" href="#p_jdCs6Aq4CI" tabindex="-1" role="presentation"></a>Şimdi ise yazılan satırlar ile sayılar arasındaki ilişki üşünün. hem programınız kare yazdırtırabilirsiniz, her kere bastıktan sonra değişkeni değiştirip yeni bir kare ekleyebikirsiniz bu şekilde (<code>+= &quot;#&quot;</code>).</p>
+
+<p><a class="p_ident" id="p_1YkPxK9/A1" href="#p_1YkPxK9/A1" tabindex="-1" role="presentation"></a><a href="#Data_Tipleri">Data Tiplerindeki</a> bulunan örneklerde kullanabilirsiniz.</p>
+
+<p><a class="p_ident" id="p_kZeRrV/2Wq" href="#p_kZeRrV/2Wq" tabindex="-1" role="presentation"></a>bunları yapınca olmadı mı? belki döngüden önce sabit bir değişken tanımlayıp onun üzerine değişikler yapabilirsiniz? olmaz mı!</p>
+
+</div></div>
+
+<h2><a class="h_ident" id="h_mBQ86PNq/f" href="#h_mBQ86PNq/f" tabindex="-1" role="presentation"></a>Faydalı lİnkler</h2>
+
+<p><a class="p_ident" id="p_iYLY6s5y/l" href="#p_iYLY6s5y/l" tabindex="-1" role="presentation"></a><a href="https://developer.mozilla.org/en-US/">Güzel bir okuma kaynağı</a></p>
+
+<p><a class="p_ident" id="p_YNhLxDabLs" href="#p_YNhLxDabLs" tabindex="-1" role="presentation"></a><a href="../extras/index.html">Türkçe İnglizce Sözlük tablosu</a></p><nav><a href="index.html" title="cover">◆</a></nav>
+</article>
