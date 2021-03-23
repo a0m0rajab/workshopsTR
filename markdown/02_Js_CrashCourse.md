@@ -1,13 +1,13 @@
 
-# Javascript Crash Course 
+# Javascript programlama dili
 
-{{quote {author: "Prophet Muhammad"}
+{{quote {author: "peygamber muhammed S.A.V."}
 
-"When a man dies, his deeds come to an end except for three things: Sadaqah Jariyah (ceaseless charity); a knowledge which is beneficial, or a virtuous descendant who prays for him (for the deceased)."
+"Bir mümin vefat edince her ameli kesilir. Yalnız üç amelinin sevabı, amel defterine yazılmaya devam eder. Bunlar, Sadaka-i cariye, faydalı kitaplarının ve temiz çocuklarının kendisi için ettikleri dua ve istiğfarların sevaplarıdır."
 
 quote}}
 
-- [Javascript Crash Course](#javascript-crash-course)
+- [Javascript programlama dili](#javascript-crash-course)
   - [Ekrana yazdırmak](#ekrana-yazdırmak)
   - [Değişkenler](#değişkenler)
     - [Değişkenler Tipleri](#değişkenler-tipleri)
